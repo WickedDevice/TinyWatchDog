@@ -1,6 +1,6 @@
 #include <TinyWatchdog.h>
 
-TinyWatchdog tinyWDT(7);
+TinyWatchdog tinyWDT;
 
 void setup(){
   tinyWDT.begin(1000, 10000); // window 1-10s

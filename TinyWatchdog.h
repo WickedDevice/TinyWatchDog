@@ -21,7 +21,7 @@ class TinyWatchdog {
     volatile uint8_t *_transmitPortRegister;
     uint16_t _tx_delay;        
   public:
-    TinyWatchdog(uint8_t p = 14);
+    TinyWatchdog(uint8_t pin = 14);
     void begin(uint16_t min_window_ms, uint16_t max_window_ms);
     void pet(void);
 };

@@ -4,8 +4,8 @@
 
 #define INITIALIZATION_MESSAGE_LENGTH 6
 
-TinyWatchdog::TinyWatchdog(uint8_t p){
-  pin = p;
+TinyWatchdog::TinyWatchdog(uint8_t pin){
+  this->pin = pin;
 }
 
 // set the pin to a SoftSerial transmit pin

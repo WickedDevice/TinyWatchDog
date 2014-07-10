@@ -69,6 +69,13 @@ void TinyWatchdog::pet(void){
   digitalWrite(pin, HIGH);  
 }
 
+void TinyWatchdog::force_reset(void){
+
+  digitalWrite(pin, LOW);
+
+  delay(500);
+}
+
 uint16_t TinyWatchdog::checkcrc(uint8_t * buffer){
   uint8_t crc = 0, ii = 0;
 

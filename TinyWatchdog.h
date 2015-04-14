@@ -24,7 +24,7 @@ class TinyWatchdog {
     TinyWatchdog(uint8_t pin = 14);
     void begin(uint16_t min_window_ms, uint16_t max_window_ms);
     void pet(void);
-	void force_reset(void);
+    void force_reset(uint16_t hold_duration = 2000);
 };
 
 
